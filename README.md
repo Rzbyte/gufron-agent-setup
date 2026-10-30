@@ -19,6 +19,28 @@ Belum punya wallet? Skip dulu, agent tetap jalan tanpa bagian wallet.
 
 ---
 
+## Login sebagai root atau user biasa?
+
+Dua-duanya bisa. Bedanya cuma di mana file mendarat, karena semua perintah di bawah pakai `~`:
+
+| Login sebagai | Config | Skills | Binary |
+|---|---|---|---|
+| `root` | `/root/.hermes/` | `/root/.agents/skills/` | `/root/.local/bin/hermes` |
+| user `hermes` | `/home/hermes/.hermes/` | `/home/hermes/.agents/skills/` | `/home/hermes/.local/bin/hermes` |
+
+Kalau VPS-nya khusus buat agent, bikin user sendiri lebih rapi (systemd `--user` + linger jalan
+tanpa root):
+
+```bash
+adduser hermes
+usermod -aG sudo hermes
+su - hermes        # lanjut semua langkah di bawah dari sini
+```
+
+Kalau tetap di root, jalankan perintah yang sama apa adanya — cukup ingat semua path ada di `/root`.
+
+---
+
 ## Langkah 1 — pasang Hermes
 
 ```bash
