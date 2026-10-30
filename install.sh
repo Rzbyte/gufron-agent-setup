@@ -6,6 +6,9 @@
 #                 TELEGRAM_HOME_CHANNEL) di environment. SKIP_WALLET=1 untuk lewati wallet.
 set -euo pipefail
 
+# jangan pernah menyasar instalasi lain: buang override yang diwarisi dari sesi Hermes
+unset HERMES_HOME HERMES_PROFILE HERMES_RUN_MODULE HERMES_SESSION_ID 2>/dev/null || true
+
 REPO_URL="https://github.com/Rzbyte/gufron-agent-setup.git"
 SRC="${GUFRON_SRC:-$HOME/gufron-setup}"
 SKIP_WALLET="${SKIP_WALLET:-0}"
