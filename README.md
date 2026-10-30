@@ -18,12 +18,12 @@ bash <(curl -fsSL https://raw.githubusercontent.com/Rzbyte/gufron-agent-setup/ma
 
 Yang dikerjakan script:
 
-1. cek `git` + `curl`
+1. pasang semua kebutuhan di awal: `git`, `curl`, `tar`, **Node + npm** (apt, Node bawaan Hermes, atau unduh resmi)
 2. install Hermes kalau belum ada (tanpa login Portal, tanpa pertanyaan)
 3. ambil repo ini, pasang config + SOUL + skill wallet
 4. tanya **2 hal saja**: API key model, lalu token bot Telegram
 5. chat id lu diambil otomatis — cukup kirim `/start` ke bot, script nungguin
-6. pasang Node + `baw` kalau belum ada
+6. pasang CLI `baw`
 7. nyalakan gateway supaya bot langsung hidup
 
 Kalau mau lewat langkah manual, lanjut baca dari bawah.
