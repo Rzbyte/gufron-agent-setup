@@ -96,6 +96,18 @@ Buka Telegram, kirim pesan ke bot lu. Kalau dibalas, berarti sudah nyambung.
 
 ## Langkah 6 — sambungin wallet (opsional)
 
+Pertama pasang CLI-nya (butuh Node 18+, `npm` harus ada):
+
+```bash
+npm install -g @binance/agentic-wallet
+baw --version
+```
+
+Kalau `npm: command not found`, Hermes biasanya sudah bawa Node sendiri di
+`~/.hermes/tools/node-*/bin` — tambahkan folder itu ke PATH, atau install Node dari nodejs.org.
+
+Setelah `baw` kebaca:
+
 ```bash
 baw auth signin     # muncul link, buka, approve di app Binance
 baw auth verify
