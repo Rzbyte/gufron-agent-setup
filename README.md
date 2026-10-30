@@ -10,14 +10,21 @@ manggil transaksi dari 1 wallet** — asal lu isi key sendiri.
 
 ## Cara cepat (otomatis)
 
-Satu perintah, semua langkah di bawah dikerjakan script:
+Satu perintah, sisanya script yang urus:
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/Rzbyte/gufron-agent-setup/main/install.sh)
 ```
 
-Dia akan: cek git/curl → install Hermes kalau belum ada → ambil repo ini → pasang config,
-SOUL, skill wallet → tanya 4 key (bisa juga lewat env var) → pasang `baw` → nyalakan gateway.
+Yang dikerjakan script:
+
+1. cek `git` + `curl`
+2. install Hermes kalau belum ada (tanpa login Portal, tanpa pertanyaan)
+3. ambil repo ini, pasang config + SOUL + skill wallet
+4. tanya **2 hal saja**: API key model, lalu token bot Telegram
+5. chat id lu diambil otomatis — cukup kirim `/start` ke bot, script nungguin
+6. pasang Node + `baw` kalau belum ada
+7. nyalakan gateway supaya bot langsung hidup
 
 Kalau mau lewat langkah manual, lanjut baca dari bawah.
 
@@ -25,12 +32,16 @@ Kalau mau lewat langkah manual, lanjut baca dari bawah.
 
 ## Yang lu butuhin dulu
 
-- Komputer atau VPS Linux (atau macOS). Nggak perlu root.
-- Akun DeepSeek (atau provider lain) buat API key model.
-- Bot Telegram dari @BotFather.
-- App Binance di HP, sudah punya wallet Agentic + Agent ID `.ai`.
+Cuma 2:
 
-Belum punya wallet? Skip dulu, agent tetap jalan tanpa bagian wallet.
+- **API key model** — daftar di https://platform.deepseek.com/api_keys (gratis, ada kredit awal)
+- **Token bot Telegram** — chat @BotFather, kirim `/newbot`, ikuti 2 pertanyaan, dapat token
+
+Opsional (buat bagian wallet):
+
+- App Binance di HP + wallet Agentic + Agent ID `.ai`
+
+Belum punya wallet? Lewati saja, agent tetap jalan penuh tanpa bagian wallet.
 
 ---
 
