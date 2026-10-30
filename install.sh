@@ -30,7 +30,7 @@ elif command -v hermes >/dev/null 2>&1; then
   echo "   sudah terpasang: $(hermes --version 2>/dev/null | head -1)"
 else
   echo "   mengunduh installer resmi..."
-  bash <(curl -fsSL https://hermes-agent.nousresearch.com/install.sh)
+  bash <(curl -fsSL https://hermes-agent.nousresearch.com/install.sh) --non-interactive
   export PATH="$HOME/.local/bin:$PATH"
   command -v hermes >/dev/null || die "installer selesai tapi 'hermes' belum ada di PATH (buka shell baru lalu jalankan ulang script ini)"
 fi
