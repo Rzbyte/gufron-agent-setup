@@ -58,7 +58,7 @@ Cuma 4 baris yang wajib diisi:
 | `TELEGRAM_ALLOWED_USERS=` | angka user id Telegram lu (@userinfobot) |
 | `TELEGRAM_HOME_CHANNEL=` | angka chat id tempat bot posting, biasanya sama |
 
-Sisanya boleh kosong. Simpan pakai Ctrl+O, Enter, lalu Ctrl+X.
+Sisanya boleh kosong (nggak perlu diisi). Simpan pakai Ctrl+O, Enter, lalu Ctrl+X.
 
 > Pakai provider lain? Ganti `model.default` dan `model.provider` di `~/.hermes/config.yaml`,
 > lalu isi key provider itu di `.env`.
