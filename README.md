@@ -8,6 +8,21 @@ manggil transaksi dari 1 wallet** — asal lu isi key sendiri.
 
 ---
 
+## Cara cepat (otomatis)
+
+Satu perintah, semua langkah di bawah dikerjakan script:
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/Rzbyte/gufron-agent-setup/main/install.sh)
+```
+
+Dia akan: cek git/curl → install Hermes kalau belum ada → ambil repo ini → pasang config,
+SOUL, skill wallet → tanya 4 key (bisa juga lewat env var) → pasang `baw` → nyalakan gateway.
+
+Kalau mau lewat langkah manual, lanjut baca dari bawah.
+
+---
+
 ## Yang lu butuhin dulu
 
 - Komputer atau VPS Linux (atau macOS). Nggak perlu root.
